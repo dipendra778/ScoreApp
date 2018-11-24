@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:onClick="hidekeyboard">
+
+    <LinearLayout
+        android:id="@+id/Parent_LL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/TeamA_LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/TeamNameA_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Team A"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/TeamScoreA_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="0"
+                />
+
+            <Button
+                android:id="@+id/SixA_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Six" />
+
+            <Button
+                android:id="@+id/FourA_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Four" />
+
+            <Button
+                android:id="@+id/threeA_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Run" />
+            <Button
+                android:id="@+id/twoA_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Run" />
+            <Button
+                android:id="@+id/oneA_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Run" />
+            <EditText
+                android:id="@+id/wicketA_Et"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+            <Button
+                android:id="@+id/okA_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ok"
+                android:onClick="displayA"/>
+            <TextView
+                android:id="@+id/wicketA_Tv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/TeamB_LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/TeamNameB_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Team A"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/TeamScoreB_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/SixB_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Six" />
+
+            <Button
+                android:id="@+id/FourB_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Four" />
+
+            <Button
+                android:id="@+id/threeB_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Run" />
+            <Button
+                android:id="@+id/twoB_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Run" />
+            <Button
+                android:id="@+id/oneB_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Run" />
+            <EditText
+                android:id="@+id/wicketB_Et"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+            <Button
+                android:id="@+id/okB_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ok"
+                android:onClick="displayB"/>
+            <TextView
+                android:id="@+id/wicketB_Tv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/Reset_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:text="Reset" />
+
+</LinearLayout>
